@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "./Movies.css";
+import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -80,19 +82,22 @@ function MovieDetails() {
   }
 
   return (
-    <div className="d-container">
-      <div className="m-details">
-        <h1>{movie.title}</h1>
-        <img
-          src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
-          alt={movie.title}
-        />
-        <p>{movie.overview}</p>
-      </div>
-      <div className="btns">
-        <button onClick={handleWatch}>Watch</button>
-        <button onClick={handleDownload}>Download</button>
-        <button onClick={handleAddToFavorites}>Add to Favorites</button>
+      <div>
+          <Header />
+      <div className="d-container smaller-screen">
+        <div className="m-details">
+          <h1>{movie.title}</h1>
+          <img className="detail-vid"
+            src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
+            alt={movie.title}
+          />
+          <p>{movie.overview}</p>
+        </div>
+        <div className="btns">
+          <button onClick={handleWatch}>Watch</button>
+          <button onClick={handleDownload}>Download</button>
+          <button onClick={handleAddToFavorites}>Add to Favorites</button>
+        </div>
       </div>
     </div>
   );

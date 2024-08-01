@@ -7,7 +7,7 @@ function Header() {
     <div>
       <nav>
         <div className="nav-items">
-          <Link to="home" className="linked-tag">
+          <Link to="/" className="linked-tag">
             <h1 className="header-text">
               Khali<span className="logo-colored">Fa</span>
             </h1>

@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 // import Search from "./Components/Search";
 import SearchResults from "./Components/SearchResults";
 import MovieDetails from "./Components/MovieDetails";
-import WatchMovie from "./Components/WatchMovie";
+// import WatchMovie from "./Components/WatchMovie";
 import Favorites from "./Components/Favorites";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         {/* <Route path="/search" element={<MovieDetails />} /> */}
         <Route path="/results" element={<SearchResults />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
-        <Route path="/watch/:id" element={<WatchMovie />} />
+        {/* <Route path="/watch/:id" element={<WatchMovie />} /> */}
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </Suspense>

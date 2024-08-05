@@ -15,7 +15,9 @@ function Header() {
           <h4 className="welcome-text">Welcome to my Movie Search Web App!</h4>
         </div>
         <p className="hero-text">
-          <i>What would you like to watch? <br></br>Just search for it!</i>
+          <i>
+            What would you like to watch? <span className="small-screen-display">Just search for it!</span>
+          </i>
         </p>
       </nav>
     </div>

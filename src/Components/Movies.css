@@ -362,6 +362,10 @@ nav {
         margin-top: 2.6rem;
     }
 
+    .small-screen-display{
+        display: none;
+    }
+
     .search {
         flex-direction: column;
         gap: 10px;

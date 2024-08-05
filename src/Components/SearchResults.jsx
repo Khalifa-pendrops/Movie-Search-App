@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import Header from "./Header";
@@ -14,6 +13,7 @@ function SearchResults() {
   return (
     <div>
       <Header />
+      <h4 className="transtion-text">Hit The Image To Select</h4>
       <div className="movie-row center">
         {filteredMovies.map((movie) => (
           <div key={movie.id} className="movie-item">
